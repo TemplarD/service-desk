@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонтная служба - Вход</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="mb-0 text-center">Ремонтная служба</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center mb-4">Вход в систему</h4>
+                        
+                        <div class="alert alert-info">
+                            <strong>Тестовые пользователи:</strong>
+                            <ul class="mb-0 mt-2">
+                                <li><code>dispatcher1</code> — Диспетчер</li>
+                                <li><code>master1</code> — Мастер</li>
+                                <li><code>master2</code> — Мастер</li>
+                            </ul>
+                        </div>
+
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Имя пользователя</label>
+                                <input type="text" class="form-control" id="name" name="name" required placeholder="Введите имя">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Войти</button>
+                        </form>
+
+                        <hr class="my-4">
+
+                        <div class="text-center">
+                            <a href="/create-request.html" class="btn btn-outline-success">Создать заявку (без входа)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/login.js"></script>
+</body>
+</html>
